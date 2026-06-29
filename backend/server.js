@@ -9,10 +9,6 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-app.get("/",(req,res)=>{
- res.send("Library Management API Running");
-});
-
 app.listen(process.env.PORT || 5000,()=>{
  console.log("Server Running");
 });
